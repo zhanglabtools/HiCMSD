@@ -326,8 +326,6 @@ for sigma in sigma_vector:
 
 
 
-## Evaluation
-
 
 
 
