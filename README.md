@@ -15,6 +15,18 @@ A package used to improve Hi-C data resolution.
 
 ## Data Processing
 
+### Generate Contact Matrices
+
+For different Hi-C datasets, there are different softwares to generate Hi-C contact matrices from pair reads data. In our experiments,  we used [juicer tools](https://github.com/aidenlab/juicer/wiki) to convert Hi-C data in  [Rao et.al.](https://www.cell.com/abstract/S0092-8674(14)01497-4)  on [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525). We firstly randomly down sampled the pair reads file and generated low-resolution training data. We provide a down sample program in file 'downsample.py'.  
+
+```shell
+
+```
+
+
+
+### Matrices to Training Data
+
 As for data processing, preprocess.py in HiCMSD receives sparse matrix, dense matrix or python .npy files as input.    preprocess.py produces .npz files as intermediate files and output four .npz files as training and testing data.
 
 #### Inputs: One or more directories of Hi-C matrix data
