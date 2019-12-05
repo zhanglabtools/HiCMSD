@@ -20,10 +20,9 @@ A package used to improve Hi-C data resolution.
 For different Hi-C datasets, there are different softwares to generate Hi-C contact matrices from pair reads data. In our experiments,  we used [juicer tools](https://github.com/aidenlab/juicer/wiki) to convert Hi-C data in  [Rao et.al.](https://www.cell.com/abstract/S0092-8674(14)01497-4)  on [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525). We firstly randomly down sampled the pair reads file and generated low-resolution training data. We provide a down sample program in file 'downsample.py'.  
 
 ```shell
-
+python downsample.py -i origin.txt -r 1/16 -o down.txt
+# The value of -r must be a number in [0,1]
 ```
-
-
 
 ### Matrices to Training Data
 
