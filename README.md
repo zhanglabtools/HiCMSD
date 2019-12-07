@@ -9,9 +9,12 @@ A package used to improve Hi-C data resolution.
 - Python 3.5+
 - numpy 1.15.4 
 - scipy 1.1.0 
-- scikit-image 0.13.0   scikit-learn 0.20.0
-- torch 0.4.1   torchvision 0.2.1
+- scikit-image 0.13.0   
+- scikit-learn 0.20.0
+- torch 0.4.1  
+-  torchvision 0.2.1
 - visdom 0.1.8.5
+- matplotlib 3.1.1
 
 ## Data Processing
 
